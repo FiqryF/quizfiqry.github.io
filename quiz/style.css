@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 .header {
@@ -52,4 +54,75 @@ body {
 
 .login-btn:hover {
     background-color: #c0003d;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 30vh; 
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+    object-fit: contain;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.icon p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.services, .health-tools {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .icon {
+        width: 80px;
+    }
 }
